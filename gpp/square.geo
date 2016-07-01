@@ -1,0 +1,14 @@
+h = 0.1;
+Point(1) = {0, 0, 0, h};
+Point(2) = {0, 1, 0, h};
+Point(3) = {1, 0, 0, h};
+Point(4) = {1, 1, 0, h};
+Line(1) = {1, 3};
+Line(2) = {3, 4};
+Line(3) = {4, 2};
+Line(4) = {2, 1};
+Line Loop(6) = {3, 4, 1, 2};
+Plane Surface(6) = {6};
+Physical Line(7) = {1, 4};
+Physical Line(8) = {2, 3};
+Physical Surface("Omega") = {6};
