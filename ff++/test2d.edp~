@@ -1,0 +1,36 @@
+//file.edp
+int m=30, L=80, LL=80;
+mesh th=square(m,m,[L*x,LL*y]);
+real sigmax=0.3, sigmay=0.3, rho=0.3, r=0.05;
+int K=40;
+real dt=0.02;
+
+fespace Vh(th,P1);
+
+
+Vh f = max(K-max(x,y),0.);
+Vh u=f;
+Vh xveloc = -x*r+x*sigmax^2+x*rho*sigmax*sigmay/2;
+Vh yveloc = -y*r+y*sigmay^2+y*rho*sigmax*sigmay/2;
+int j=0, n;
+for (n=0 to 0.5/dt) do
+{
+solve(th,u) with AA(j){
+pde(u) u*(r+1/dt)
+- dxx(u)*(x*sigmax)^2/2 -dyy(u)*(y*sigmay)^2/2
+- dxy(u)*rho*sigmax*sigmay*x*y/2
+- dyx(u)*rho*sigmax*sigmay*x*y
+= convect(th,xveloc,yveloc,dt,u)/dt;
+on(aa,dd) dnu(u)=0;
+on(bb,cc) u = f;
+};
+u = max(u,f); plot("uf",th, u-f);
+if(j==10) then {
+mesh th = adaptmesh("th",th,u);
+Vh xveloc = -x*r+x*sigmax^2+x*rho*sigmax*sigmay/2;
+Vh yveloc = -y*r+y*sigmay^2+y*rho*sigmax*sigmay/2;
+Vh u=u;
+
+j =-1;
+}; j=j+1;
+};

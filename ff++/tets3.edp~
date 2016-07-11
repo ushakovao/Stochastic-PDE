@@ -1,0 +1,148 @@
+// test.edp
+
+real L=log(200.);
+real K=100.;
+real sigma=.2,beta=.1,r=.1;
+
+//
+// Technical data to recreate OX and OY axis
+//
+
+real[int] ox1(10),ox2(10);
+real[int] oy1(10),oy2(10);
+for (int i=0;i<10;i++)
+{
+//
+// to obtain a OY axis
+//    
+    oy1[i]=0;
+    oy2[i]=100/9.*i;     
+};
+for (int i=0;i<10;i++)
+{
+	
+//
+// to obtain a OX axis
+// 
+    ox1[i]=200/9.*i;
+    ox2[i]=0;
+    
+};
+
+int m=100; // grid points on x-interval [0,1]
+real h=2*L/m;
+
+//Just one line of triangles
+mesh Th=square(m,1,[-L+2*L*x,h*y]);
+
+plot(Th, cmm="NO ADAPTED MESH ",wait=1);//,ps="reactiondiffusionnoadapted2dmesh.eps");
+fespace Vh(Th,P2);
+
+//
+// Problem definition
+
+
+//1d pde on the boundary term       u_t-sigma^2/2*u_{xx}-(beta-sigma^2/2)u_x+ru=0,   0<x<1
+//                                  u(0,x)=(e^t-K)_+
+//                                  u(t,-L)=0,
+//                                  u(t,L)=e^L-Ke^{-rt}
+//    data...................................
+//                                  L=log(200), K=100, sigma=.2, beta=.1,r=.1
+//                        
+//
+ 
+// Initial data
+func real u0(real t) 
+{
+	if (exp(t)>K)
+	{return exp(t)-K;}
+	else
+	{return  0;}; 
+}
+
+ 
+Vh u,v,uold=u0(x),unew;
+
+//
+// macro to get dofs on x-intetrval [0,1]
+//
+macro boundarydofs(lab,flab,Th,Xh,zoi,ndofonlab) 
+{int[int] ib(0:Xh.ndof-1); 
+varf vbord(u1,v1) = on(lab,u1=flab);
+real[int] xb=vbord(0,Xh,tgv=1);
+sort(xb,ib); 
+zoi=ib;
+xb = xb ? 1 : 0;
+ndofonlab = xb.sum;  
+}//
+int mm1=u[].n;
+cout<<"Total number of dofs initial mesh "<<mm1<<endl;
+int[int] zoi(mm1);
+int ndofon1=0;
+boundarydofs(1,x-1000,Th,Vh,zoi,ndofon1) 
+//
+// zoi keeps dofs on x-interval [0,1]
+//
+zoi.resize(ndofon1);
+real dt=0.01;
+
+int M=100;
+real T=dt*M,alpha=1./dt;
+real time=0;
+
+varf mat(u,v)= int1d(Th,1)(alpha*u*v+sigma^2/2*dx(u)*dx(v)+(beta-sigma^2/2)*u*dx(v)+r*u*v)
+              +on(3,4,u=0)+on(2,u=exp(L)-K*exp(-r*time)); 
+
+varf rhs(u,v)= int1d(Th,1)(alpha*uold*v+0*v)+on(3,4,u=0)+on(2,u=exp(L)-K*exp(-r*time));
+
+Vh xTh=x;
+real[int] rhs1d(ndofon1),pu1d(ndofon1);
+real[int] exppt(ndofon1);
+real[int] pt(ndofon1),putrue(ndofon1);
+
+for (int i=0;i<ndofon1;i++)
+{
+	pt[i]=xTh[](zoi[i]);
+	pu1d[i]=u0(pt[i]);
+	exppt[i]=exp(pt[i]);
+}
+
+plot([exppt,pu1d],[ox1,ox2],[oy1,oy2],wait=1,cmm="Time "+0);
+for (int mm=0;mm<=M;mm++)
+{
+time=mm*dt;
+
+matrix A=mat(Vh,Vh,tgv=1e30);
+real[int] l=rhs(0,Vh,tgv=1e30);
+
+
+for (int i=0;i<ndofon1;i++)
+{
+	rhs1d(i)=l(zoi[i]);
+};
+matrix MM=A(zoi,zoi);
+set(MM,solver=UMFPACK);
+
+
+
+ 
+for (int i=0;i<ndofon1;i++)
+{
+	pt[i]=xTh[](zoi[i]);
+	exppt[i]=exp(pt[i]);
+}
+
+
+	
+pu1d=MM^-1*rhs1d;
+
+plot([exppt,pu1d],[ox1,ox2],[oy1,oy2],wait=1,cmm="Time "+mm*dt);
+//
+//update
+//
+for (int i=0;i<ndofon1;i++)
+{
+	uold[][zoi[i]]=pu1d(i);
+};
+
+}

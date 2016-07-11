@@ -1,0 +1,31 @@
+// file BlackScholes2D.edp
+int m=30,L=80,LL=80, j=100;
+real sigx=1., sigy=1., rho=0., r=0.05, K=40, dt=0.01;
+mesh th=square(m,m,[L*x,LL*y]);
+fespace Vh(th,P1);
+
+Vh u=max(K-max(x,y),0.);
+Vh xveloc, yveloc, v,uold;
+
+for (int n=0; n*dt <= 1.0; n++)
+{
+if(j>20)  { th = adaptmesh(th,u,verbosity=1,abserror=1,nbjacoby=2,
+err=0.001, nbvx=5000, omega=1.8, ratio=1.8, nbsmooth=3,
+splitpbedge=1, maxsubdiv=5,rescaling=1) ;
+j=0;
+xveloc = -x*r+x*sigx^2+x*rho*sigx*sigy/2; //discount factor
+yveloc = -y*r+y*sigy^2+y*rho*sigx*sigy/2;
+
+u=u;
+
+};
+uold=u;
+solve eq1(u,v,init=j,solver=LU) = int2d(th)( u*v*(r+1/dt)
++ dx(u)*dx(v)*(x*sigx)^2/2 + dy(u)*dy(v)*(y*sigy)^2/2
++ (dy(u)*dx(v) + dx(u)*dy(v))*rho*sigx*sigy*x*y/2)
+- int2d(th)(v*convect([xveloc,yveloc],dt,uold)/dt) + on(2,3,u=0);
+j=j+1;
+};
+plot(u, fill=1,wait=1,value=1);
+//cout<< "Peclet1 for sigma= "<<sigx<<" is "<< (2*r*L)/(u*sigx^2)<<endl;
+//cout<< "Peclet2 for sigma= "<<sigy<<" is "<< (2*r*L)/(u*sigy^2)<<endl;
