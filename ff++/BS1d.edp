@@ -1,0 +1,21 @@
+//BlackSholes1D.edp
+int Nx = 50, L=200, LL = 10,n;
+real T=1, sigma = 0.3, r=0.05, K =100, dt = 0.01;
+mesh th = square (Nx, 1, [L*x, LL*y]);
+fespace  Vh(th, P1, periodic = [[1,x],[3,x]]);
+
+Vh u = max(K-x, 0.), v, uold;
+
+problem BS(u, v, init=n)=
+	int2d(th) (u*v*(r+1/dt)
+	-x*(r-sigma^2/2)*dx(u)*v
+	+dx(u)*dx(v)*(x*sigma)^2/2)
+	-int2d(th)(uold*v/dt) + on (2, u=0);
+
+for (n=0; n*dt <=T; n++)
+{
+uold=u;
+BS;
+}
+
+plot(u, th , value=1);

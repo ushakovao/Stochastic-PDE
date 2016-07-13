@@ -1,0 +1,45 @@
+****Project****
+
+Add Weak form, 1d,2d
+Why unique solution? (via filtration concept)
+Add proof of unicity
+Feynman (existance)
+Garding (coersivity)
+Delaunay triangulation
+Why only for Put??? - Unbounded Domain
+
+
+
+ITO ISOMETRY
+FELLER CONTINUITY
+GRONWALL INEQUITY
+
+
+****Presentation****
+
+No proofs
+Options by type / by process
+Explain payoff
+
+
+****Freefem++****
+
+Explain periodic meshing
+Try with Heston model (Stein)
+Adapt Mesh - Delaunnay
+
+****Feel++****
+
+Add exporter
+    auto e = exporter( _mesh = mesh );
+    e->add( "solution", u );
+    e->add( "exact", v );
+
+Finish BS and try Heston
+
+Try Barrier option
+Try Asian option
+
+****GitHub****
+
+Change to Latex

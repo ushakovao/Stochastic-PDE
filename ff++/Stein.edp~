@@ -1,0 +1,17 @@
+//Stein.edp
+real T=5, K=120, r=0.0, mu =0.4; 
+int n=1,L=500, LL=250, j=0;
+func f = abs(y);
+mesh th = square(50*n,50*n,[x*L,y*LL]);
+fespace Vh(th,P1);
+Vh u=f,v,w,rhs;
+problem eq1(u,v,init=j) = int2d(th)( u*v/dt
++ dx(u)*dx(v) *x*x*y*y*a11 + dy(u)*dy(v) *y*y*a22
++ dy(u)*dx(v) *y*y*x*a12 + dx(u)*dy(v) *y*y*x*a21
++ dx(u)*v *x*(y*( a1 + y/sc2)-r) + dy(u)*v *y*(y*a2+mu2))
++ rhs[] + on(1,u=max(K-x,0.)) ;
+varf vrhs(u,v) = int2d(th)( v*u/dt );
+matrix M = rhs(Vh,Vh);
+for (int n=0; n<Nmax ; n++){
+w=u; rhs[] = M*u[]; eq1 ; t= t+dt; j++;
+if(n==20*(nM = vrhs(Vh,Vh); rhs =0; u=max(K-x,0.); t=0; j=0; }
