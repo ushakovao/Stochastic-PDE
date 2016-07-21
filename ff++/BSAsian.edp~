@@ -4,6 +4,8 @@ real verbo = 0, T=4, mu = 0.3, r=0.05, K =100, t, dt = T/Nmax;
 
 mesh th = square (N, N, [ L*x, L*y]);
 fespace  Vh(th, P2);
+fespace Vhdc(th,P1dc);
+
 
 func u1= (mu^2-r)*x;
 func u2 = (y-x)/(T-t); 
@@ -11,7 +13,7 @@ func u2 = (y-x)/(T-t);
 real g1,g2,g3;
 
 Vh u = max(K-x, 0.), v, uold;
-
+//explain <,>
 problem BS(u, v, init=n)=
 	int2d(th) (u*v*(r+1/dt)
 	+dx(u)*dx(v)*x^2*mu^2/2)
@@ -20,10 +22,13 @@ problem BS(u, v, init=n)=
 
 for (t=0; t<T-2; t+=dt)
 {
+//artificial boundaties 
 g1 = 2*t*exp(-t*r)/T/(mu*L)^2;
 g2 = 2*(1-exp(-t*r))/T/r/(mu*L)^2;
 g3 = K*T/(T-t+0.001);
 BS; n=1;
 uold = u;
-plot(u,  wait=1, fill=1, dim = 3, value=1);
+//plot(u,  wait=1, fill=1, dim = 3, value=1);
 };
+Vhdc dxu=dx(u);
+plot(dxu,th); 

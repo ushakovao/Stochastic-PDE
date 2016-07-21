@@ -1,12 +1,7 @@
 ****Project****
 
-Add Weak form, 1d,2d
-Why unique solution? (via filtration concept)
-Add proof of unicity
-Feynman (existance)
-Garding (coersivity)
+
 Delaunay triangulation
-Why only for Put??? - Unbounded Domain
 
 
 
@@ -17,9 +12,6 @@ GRONWALL INEQUITY
 
 ****Presentation****
 
-No proofs
-Options by type / by process
-Explain payoff
 
 
 ****Freefem++****
@@ -37,7 +29,7 @@ Add exporter
 
 Finish BS and try Heston
 
-Try Barrier option
+
 Try Asian option
 
 ****GitHub****

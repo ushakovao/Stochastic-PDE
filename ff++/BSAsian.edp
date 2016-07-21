@@ -4,6 +4,8 @@ real verbo = 0, T=4, mu = 0.3, r=0.05, K =100, t, dt = T/Nmax;
 
 mesh th = square (N, N, [ L*x, L*y]);
 fespace  Vh(th, P2);
+fespace Vhdc(th,P1dc);
+
 
 func u1= (mu^2-r)*x;
 func u2 = (y-x)/(T-t); 
@@ -28,3 +30,4 @@ BS; n=1;
 uold = u;
 plot(u,  wait=1, fill=1, dim = 3, value=1);
 };
+
