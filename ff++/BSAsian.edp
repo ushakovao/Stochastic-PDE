@@ -1,10 +1,10 @@
 //BlackSholesAsian.edp
 int N = 25, L=250,Nmax = 30,n=0;
-real verbo = 0, T=4, mu = 0.3, r=0.05, K =100, t, dt = T/Nmax;
+real verbo = 0, T=4, mu = 0.3, r=0.03, K =100, t, dt = T/Nmax;
 
 mesh th = square (N, N, [ L*x, L*y]);
 fespace  Vh(th, P2);
-fespace Vhdc(th,P1dc);
+
 
 
 func u1= (mu^2-r)*x;
@@ -12,7 +12,10 @@ func u2 = (y-x)/(T-t);
 
 real g1,g2,g3;
 
-Vh u = max(K-x, 0.), v, uold;
+Vh u = max(y-K, 0.), v, uold;
+
+
+
 //explain <,>
 problem BS(u, v, init=n)=
 	int2d(th) (u*v*(r+1/dt)
@@ -28,6 +31,6 @@ g2 = 2*(1-exp(-t*r))/T/r/(mu*L)^2;
 g3 = K*T/(T-t+0.001);
 BS; n=1;
 uold = u;
-plot(u,  wait=1, fill=1, dim = 3, value=1);
+plot(u,  wait=0, value=1,  dim = 3, fill=1);
 };
 

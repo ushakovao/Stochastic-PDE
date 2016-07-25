@@ -20,5 +20,5 @@ BS;
 }
 Vhdc dxu=dx(u);
 //plot(u, th , value=1);
-plot(dxu,th); //delta
-plot(dxu,th); //delta
+plot(dxu,th,value=1); //delta
+

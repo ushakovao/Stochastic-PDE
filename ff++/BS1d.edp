@@ -1,6 +1,6 @@
 //BlackSholes1D.edp
 int Nx = 50, L=200, LL = 10,n;
-real T=1, sigma = 0.3, r=0.05, K =100, dt = 0.01;
+real T=1, sigma = 0.1, r=0.05, K =100, dt = 0.01;
 mesh th = square (Nx, 1, [L*x, LL*y]);
 fespace  Vh(th, P1, periodic = [[1,x],[3,x]]);
 fespace Vhdc(th,P1dc);
@@ -20,5 +20,5 @@ BS;
 }
 Vhdc dxu=dx(u);
 //plot(u, th , value=1);
-plot(dxu,th); //delta
+plot(dxu,th,value=1); //delta
 
