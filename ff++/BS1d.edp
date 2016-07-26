@@ -17,8 +17,10 @@ for (n=0; n*dt <=T; n++)
 {
 uold=u;
 BS;
+cout<<"Peclet = "<< (2*r)/(sigma*x) <<endl ;
+cout<<"max = "<< r/(sigma^2) <<endl ;	
 }
 Vhdc dxu=dx(u);
-//plot(u, th , value=1);
-plot(dxu,th,value=1); //delta
+plot(u, th , value=1);
+//plot(dxu,th,value=1); //delta
 
