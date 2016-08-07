@@ -1,7 +1,7 @@
 //BlackSholesBarrier.edp
 int Nx = 50, L=150, LL = 10,n;
 real T=1, sigma = 0.3, r=0.05, K =100, dt = 0.01, b=30;
-//mesh rules the payoff
+
 mesh th = square (Nx, 1, [b + L*x, LL*y]);
 fespace  Vh(th, P1, periodic = [[1,x],[3,x]]);
 fespace Vhdc(th,P1dc);

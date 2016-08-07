@@ -80,7 +80,7 @@ double N(double x) {
 	return Boole(-10.0, x, 240);
 }
 
-// Black-Scholes Call Price
+// Pricing formulas
 double BSPrice(double S0, double K, double T, double r, double sigma, char OpType)
 {
 	double d = (log(S0/K) + T*(r + 0.5*sigma*sigma)) / (sigma*sqrt(T));

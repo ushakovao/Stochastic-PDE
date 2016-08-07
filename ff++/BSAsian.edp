@@ -23,7 +23,7 @@ problem BS(u, v, init=n)=
 
 for (t=0; t<T-2; t+=dt)
 {
-//artificial boundaties 
+
 g1 = 2*t*exp(-t*r)/T/(sigma*L)^2;
 g2 = 2*(1-exp(-t*r))/T/r/(sigma*L)^2;
 g3 = K*T/(T-t+0.001);

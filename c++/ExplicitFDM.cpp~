@@ -103,7 +103,7 @@ int main()
   cout<<"*******************"<<endl;
   cout <<"PDE solution = " <<explicitCallOption(S0,K,T,r,sigma,iMax,jMax) << endl;
   cout<<"*******************"<<endl;
-  cout <<"Analytical solution = " << BSPrice(S0,K,T,r,sigma,'P') <<endl;
+  cout <<"Analytical solution = " << BSPrice(S0,K,T,r,sigma,'C') <<endl;
   cout<<"*******************"<<endl;
 
 }

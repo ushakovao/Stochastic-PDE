@@ -1,0 +1,5 @@
+1) http://bbu.yolasite.com/resources/Financial%20Engineering%20with%20Finite%20Elements.pdf - Financial Engineering with Finite Elements
+
+2) http://raudys.com/kursas/Options,%20Futures%20and%20Other%20Derivatives%207th%20John%20Hull.pdf - Options, Futures and other derivatives
+
+3) http://th.if.uj.edu.pl/~gudowska/dydaktyka/Oksendal.pdf - Stochastic Differential Equations

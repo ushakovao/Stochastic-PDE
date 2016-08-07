@@ -1,8 +1,8 @@
 //BlackSholesAsian.edp
-int N = 25, L=250,Nmax = 30,n=0;
+int N = 25, L=200,Nmax = 30,n=0;
 real  T=4, sigma = 0.3, r=0.03, K =100, t, dt = T/Nmax;
 
-mesh th = square (N, N, [ L*x, L*y]);
+mesh th = square (N, N, [ L*x, 10*y]);
 fespace  Vh(th, P2);
 
 

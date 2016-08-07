@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.12)  7 AUG 2016 16:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.12)  7 AUG 2016 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -656,123 +656,128 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
- [2] [3]
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 56--61
+
+ []
+
+[3]
 Chapter 1.
 <dia.png, id=25, 772.8875pt x 707.64375pt>
 File: dia.png Graphic file (type png)
  <use dia.png>
-Package pdftex.def Info: dia.png used on input line 70.
+Package pdftex.def Info: dia.png used on input line 73.
 (pdftex.def)             Requested size: 256.07481pt x 234.45177pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--83
+Underfull \hbox (badness 10000) in paragraph at lines 80--86
 
  []
 
 <payoff.png, id=26, 752.8125pt x 375.4025pt>
 File: payoff.png Graphic file (type png)
  <use payoff.png>
-Package pdftex.def Info: payoff.png used on input line 98.
+Package pdftex.def Info: payoff.png used on input line 101.
 (pdftex.def)             Requested size: 409.72125pt x 204.3182pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--100
+Underfull \hbox (badness 10000) in paragraph at lines 93--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--100
+Underfull \hbox (badness 10000) in paragraph at lines 93--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--100
+Underfull \hbox (badness 10000) in paragraph at lines 93--103
 
  []
 
 [4
 
  <./dia.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 <OptionsProfit.png, id=33, 681.54625pt x 714.67pt>
 File: OptionsProfit.png Graphic file (type png)
  <use OptionsProfit.png>
-Package pdftex.def Info: OptionsProfit.png used on input line 111.
+Package pdftex.def Info: OptionsProfit.png used on input line 114.
 (pdftex.def)             Requested size: 358.50317pt x 375.9271pt.
 
 [5 <./payoff.png>] [6 <./OptionsProfit.png>]
 <models.png, id=46, 1199.48125pt x 332.24126pt>
 File: models.png Graphic file (type png)
  <use models.png>
-Package pdftex.def Info: models.png used on input line 162.
+Package pdftex.def Info: models.png used on input line 165.
 (pdftex.def)             Requested size: 512.14963pt x 141.86224pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--169
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--174
+Underfull \hbox (badness 10000) in paragraph at lines 174--177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--180
+Underfull \hbox (badness 10000) in paragraph at lines 179--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--188
+Underfull \hbox (badness 10000) in paragraph at lines 186--191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--188
+Underfull \hbox (badness 10000) in paragraph at lines 186--191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--192
+Underfull \hbox (badness 10000) in paragraph at lines 191--195
 
  []
 
 [7 <./models.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 193--196
+Underfull \hbox (badness 10000) in paragraph at lines 196--199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--199
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--204
+Underfull \hbox (badness 10000) in paragraph at lines 205--207
 
  []
 
 <octave1.png, id=52, 871.255pt x 298.11375pt>
 File: octave1.png Graphic file (type png)
  <use octave1.png>
-Package pdftex.def Info: octave1.png used on input line 239.
+Package pdftex.def Info: octave1.png used on input line 242.
 (pdftex.def)             Requested size: 512.14963pt x 175.23965pt.
  [8]
 <octave2.png, id=56, 819.06pt x 300.12125pt>
 File: octave2.png Graphic file (type png)
  <use octave2.png>
-Package pdftex.def Info: octave2.png used on input line 245.
+Package pdftex.def Info: octave2.png used on input line 248.
 (pdftex.def)             Requested size: 512.14963pt x 187.67148pt.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.250     \left
+l.253     \left
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -780,7 +785,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \let 
-l.251     \includegraphics
+l.254     \includegraphics
                           [width=0.7\textwidth]{gpp.png}
 I was expecting to see something like `(' or `\{' or
 `\}' here. If you typed, e.g., `{' instead of `\{', you
@@ -792,13 +797,13 @@ nonnegative, or you can use `\delimiter <delimiter code>'.
 <gpp.png, id=57, 749.80125pt x 431.6125pt>
 File: gpp.png Graphic file (type png)
  <use gpp.png>
-Package pdftex.def Info: gpp.png used on input line 251.
+Package pdftex.def Info: gpp.png used on input line 254.
 (pdftex.def)             Requested size: 358.50317pt x 206.36816pt.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.252     \caption{ Greeks }
+l.255     \caption{ Greeks }
                             
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -806,7 +811,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.252     \caption{ Greeks }
+l.255     \caption{ Greeks }
                             
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -817,78 +822,78 @@ my insertion and my current dilemma will both disappear.
 [9 <./octave1.png> <./octave2.png> <./gpp.png>]
 Chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--264
+Underfull \hbox (badness 10000) in paragraph at lines 265--267
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--269
+Underfull \hbox (badness 10000) in paragraph at lines 270--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
 
  []
 
 [10
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 296--303
+Underfull \hbox (badness 10000) in paragraph at lines 299--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--303
+Underfull \hbox (badness 10000) in paragraph at lines 299--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--303
+Underfull \hbox (badness 10000) in paragraph at lines 299--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--315
+Underfull \hbox (badness 10000) in paragraph at lines 317--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--321
+Underfull \hbox (badness 10000) in paragraph at lines 319--324
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--360
+Underfull \hbox (badness 10000) in paragraph at lines 357--363
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--360
+Underfull \hbox (badness 10000) in paragraph at lines 357--363
 
  []
 
 [11] [12]
 Chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--379
+Underfull \hbox (badness 10000) in paragraph at lines 381--382
 
  []
 
 <sp500.png, id=74, 818.05624pt x 576.1525pt>
 File: sp500.png Graphic file (type png)
  <use sp500.png>
-Package pdftex.def Info: sp500.png used on input line 413.
+Package pdftex.def Info: sp500.png used on input line 416.
 (pdftex.def)             Requested size: 307.2929pt x 216.42589pt.
  [13
 
@@ -896,120 +901,120 @@ Package pdftex.def Info: sp500.png used on input line 413.
 <log.png, id=78, 741.77126pt x 579.16376pt>
 File: log.png Graphic file (type png)
  <use log.png>
-Package pdftex.def Info: log.png used on input line 428.
+Package pdftex.def Info: log.png used on input line 431.
 (pdftex.def)             Requested size: 307.2929pt x 239.93312pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--429
+Underfull \hbox (badness 10000) in paragraph at lines 423--432
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--432
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
  []
 
 <gbmgnu.png, id=79, 622.325pt x 380.42125pt>
 File: gbmgnu.png Graphic file (type png)
  <use gbmgnu.png>
-Package pdftex.def Info: gbmgnu.png used on input line 436.
+Package pdftex.def Info: gbmgnu.png used on input line 439.
 (pdftex.def)             Requested size: 409.72125pt x 250.45767pt.
  [14 <./sp500.png> <./log.png>] <brown.png, id=83, 1002.74625pt x 496.85625pt>
 File: brown.png Graphic file (type png)
  <use brown.png>
-Package pdftex.def Info: brown.png used on input line 447.
+Package pdftex.def Info: brown.png used on input line 450.
 (pdftex.def)             Requested size: 281.68385pt x 139.57368pt.
 
 <poisson.png, id=84, 999.735pt x 501.875pt>
 File: poisson.png Graphic file (type png)
  <use poisson.png>
-Package pdftex.def Info: poisson.png used on input line 452.
+Package pdftex.def Info: poisson.png used on input line 455.
 (pdftex.def)             Requested size: 281.68385pt x 141.40471pt.
 
 <wiener.png, id=85, 999.735pt x 497.86pt>
 File: wiener.png Graphic file (type png)
  <use wiener.png>
-Package pdftex.def Info: wiener.png used on input line 458.
+Package pdftex.def Info: wiener.png used on input line 461.
 (pdftex.def)             Requested size: 281.68385pt x 140.27347pt.
  [15 <./gbmgnu.png> <./brown.png> <./poisson.png>] <merton.png, id=89, 1000.738
 75pt x 502.87875pt>
 File: merton.png Graphic file (type png)
 
 <use merton.png>
-Package pdftex.def Info: merton.png used on input line 463.
+Package pdftex.def Info: merton.png used on input line 466.
 (pdftex.def)             Requested size: 281.68385pt x 141.5494pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--471
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 472--473
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 476--477
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--481
+Underfull \hbox (badness 10000) in paragraph at lines 483--484
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 484--485
+Underfull \hbox (badness 10000) in paragraph at lines 487--488
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--491
+Underfull \hbox (badness 10000) in paragraph at lines 490--494
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--498
+Underfull \hbox (badness 10000) in paragraph at lines 500--501
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--500
+Underfull \hbox (badness 10000) in paragraph at lines 502--503
 
  []
 
 [16 <./wiener.png> <./merton.png>]
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 542--544
+Underfull \hbox (badness 10000) in paragraph at lines 545--547
 
  []
 
 [17
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 576--578
+Underfull \hbox (badness 10000) in paragraph at lines 579--581
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 623--626
+Underfull \hbox (badness 10000) in paragraph at lines 626--629
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 641--643
+Underfull \hbox (badness 10000) in paragraph at lines 644--646
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 670--672
+Underfull \hbox (badness 10000) in paragraph at lines 673--675
 
  []
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.713 \end{alignat*}
+l.716 \end{alignat*}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1020,7 +1025,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.713 \end{alignat*}
+l.716 \end{alignat*}
                     
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1029,7 +1034,7 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.713 \end{alignat*}
+l.716 \end{alignat*}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1040,7 +1045,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.713 \end{alignat*}
+l.716 \end{alignat*}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1051,7 +1056,7 @@ my insertion and my current dilemma will both disappear.
 ! Misplaced \omit.
 \math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
                                                   \kern -\alignsep@ \iftag@ ...
-l.713 \end{alignat*}
+l.716 \end{alignat*}
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1059,7 +1064,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.713 \end{alignat*}
+l.716 \end{alignat*}
                     
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1069,7 +1074,7 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.724 \end{alignat*}
+l.727 \end{alignat*}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1080,7 +1085,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.724 \end{alignat*}
+l.727 \end{alignat*}
                     
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1089,7 +1094,7 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.724 \end{alignat*}
+l.727 \end{alignat*}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1100,7 +1105,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.724 \end{alignat*}
+l.727 \end{alignat*}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1111,7 +1116,7 @@ my insertion and my current dilemma will both disappear.
 ! Misplaced \omit.
 \math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
                                                   \kern -\alignsep@ \iftag@ ...
-l.724 \end{alignat*}
+l.727 \end{alignat*}
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1119,7 +1124,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.724 \end{alignat*}
+l.727 \end{alignat*}
                     
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1132,7 +1137,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.728 ...., the price of the option at time $T −
+l.731 ...., the price of the option at time $T −
                                                    t$ and when the spot pric...
 
 Your command was ignored.
@@ -1140,14 +1145,14 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 759--761
+Underfull \hbox (badness 10000) in paragraph at lines 762--764
 
  []
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.767 \end{alignat*}
+l.770 \end{alignat*}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1158,7 +1163,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.767 \end{alignat*}
+l.770 \end{alignat*}
                     
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1167,7 +1172,7 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.767 \end{alignat*}
+l.770 \end{alignat*}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1178,7 +1183,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.767 \end{alignat*}
+l.770 \end{alignat*}
                     
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1187,7 +1192,7 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.767 \end{alignat*}
+l.770 \end{alignat*}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1198,7 +1203,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.767 \end{alignat*}
+l.770 \end{alignat*}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1209,7 +1214,7 @@ my insertion and my current dilemma will both disappear.
 ! Misplaced \omit.
 \math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
                                                   \kern -\alignsep@ \iftag@ ...
-l.767 \end{alignat*}
+l.770 \end{alignat*}
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1217,7 +1222,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.767 \end{alignat*}
+l.770 \end{alignat*}
                     
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1226,7 +1231,7 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.767 \end{alignat*}
+l.770 \end{alignat*}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1237,7 +1242,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.767 \end{alignat*}
+l.770 \end{alignat*}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1248,7 +1253,7 @@ my insertion and my current dilemma will both disappear.
 ! Misplaced \omit.
 \math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
                                                   \kern -\alignsep@ \iftag@ ...
-l.767 \end{alignat*}
+l.770 \end{alignat*}
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1256,7 +1261,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.767 \end{alignat*}
+l.770 \end{alignat*}
                     
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1264,7 +1269,7 @@ Try to go on, since this might almost work.
 
 [20]
 ! Undefined control sequence.
-l.774 v(t) \leqC
+l.777 v(t) \leqC
                 +A\int_0^t v(s) ds
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1273,17 +1278,17 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 779--782
+Underfull \hbox (badness 10000) in paragraph at lines 782--785
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 779--782
+Underfull \hbox (badness 10000) in paragraph at lines 782--785
 
  []
 
 
-Overfull \hbox (6.2638pt too wide) in paragraph at lines 800--810
+Overfull \hbox (6.2638pt too wide) in paragraph at lines 803--813
 \T1/cmr/m/n/10 Let $\OML/cmm/m/it/10 X[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t; w\
 OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 X[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 w\OT1/
 cmr/m/n/10 )$ \T1/cmr/m/n/10 and $\OML/cmm/m/it/10 X[]\OT1/cmr/m/n/10 (\OML/cmm
@@ -1296,19 +1301,19 @@ m/it/10 w\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 be so-lu-tions with ini-tial val-ues
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 800--810
+Underfull \hbox (badness 10000) in paragraph at lines 803--813
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 846--856
+Underfull \hbox (badness 10000) in paragraph at lines 849--859
 
  []
 
 ! Undefined control sequence.
 <recently read> \all 
                      
-l.867 So we conclude that for $\all
+l.870 So we conclude that for $\all
                                     t \in [0,T]$ we have
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1319,7 +1324,7 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.871 \square
+l.874 \square
              
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1327,7 +1332,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.872 ...sh Adaptation and Delaunay triangulation}
+l.875 ...sh Adaptation and Delaunay triangulation}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1335,7 +1340,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.872 ...sh Adaptation and Delaunay triangulation}
+l.875 ...sh Adaptation and Delaunay triangulation}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1346,7 +1351,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \@par ... \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.872 ...sh Adaptation and Delaunay triangulation}
+l.875 ...sh Adaptation and Delaunay triangulation}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1357,97 +1362,97 @@ deleted material, e.g., by typing `I$}'.
 [22] <Delaunay.png, id=114, 501.875pt x 501.875pt>
 File: Delaunay.png Graphic file (type png)
  <use Delaunay.png>
-Package pdftex.def Info: Delaunay.png used on input line 883.
+Package pdftex.def Info: Delaunay.png used on input line 886.
 (pdftex.def)             Requested size: 204.85672pt x 204.85878pt.
 
 <s01.png, id=115, 673.51625pt x 427.5975pt>
 File: s01.png Graphic file (type png)
  <use s01.png>
-Package pdftex.def Info: s01.png used on input line 900.
+Package pdftex.def Info: s01.png used on input line 903.
 (pdftex.def)             Requested size: 243.27419pt x 154.45042pt.
 
 <s03.png, id=116, 651.43375pt x 423.5825pt>
 File: s03.png Graphic file (type png)
  <use s03.png>
-Package pdftex.def Info: s03.png used on input line 902.
+Package pdftex.def Info: s03.png used on input line 905.
 (pdftex.def)             Requested size: 243.27419pt x 158.18378pt.
  [23 <./Delaunay.png>] <d01.png, id=121, 643.40375pt x 430.60875pt>
 File: d01.png Graphic file (type png)
  <use d01.png>
-Package pdftex.def Info: d01.png used on input line 908.
+Package pdftex.def Info: d01.png used on input line 911.
 (pdftex.def)             Requested size: 243.27419pt x 162.81169pt.
 
 <d03.png, id=122, 640.3925pt x 432.61626pt>
 File: d03.png Graphic file (type png)
  <use d03.png>
-Package pdftex.def Info: d03.png used on input line 910.
+Package pdftex.def Info: d03.png used on input line 913.
 (pdftex.def)             Requested size: 243.27419pt x 164.34308pt.
 
 <b30.png, id=123, 630.355pt x 420.57124pt>
 File: b30.png Graphic file (type png)
  <use b30.png>
-Package pdftex.def Info: b30.png used on input line 916.
+Package pdftex.def Info: b30.png used on input line 919.
 (pdftex.def)             Requested size: 153.64644pt x 102.51141pt.
 
 <b90.png, id=124, 610.28pt x 425.59pt>
 File: b90.png Graphic file (type png)
  <use b90.png>
-Package pdftex.def Info: b90.png used on input line 918.
+Package pdftex.def Info: b90.png used on input line 921.
 (pdftex.def)             Requested size: 153.64644pt x 107.14403pt.
 
 <b100.png, id=125, 617.30624pt x 413.545pt>
 File: b100.png Graphic file (type png)
  <use b100.png>
-Package pdftex.def Info: b100.png used on input line 920.
+Package pdftex.def Info: b100.png used on input line 923.
 (pdftex.def)             Requested size: 153.64644pt x 102.93166pt.
 
 <bs1a.png, id=126, 491.8375pt x 489.83pt>
 File: bs1a.png Graphic file (type png)
  <use bs1a.png>
-Package pdftex.def Info: bs1a.png used on input line 935.
+Package pdftex.def Info: bs1a.png used on input line 938.
 (pdftex.def)             Requested size: 243.27419pt x 242.28348pt.
 
 <bs1b.png, id=127, 492.84125pt x 488.82625pt>
 File: bs1b.png Graphic file (type png)
  <use bs1b.png>
-Package pdftex.def Info: bs1b.png used on input line 937.
+Package pdftex.def Info: bs1b.png used on input line 940.
 (pdftex.def)             Requested size: 243.27419pt x 241.29471pt.
  [24 <./s01.png> <./s03.png> <./d01.png> <./d03.png> <./b30.png> <./b90.png> <.
 /b100.png>]
 <bs2a.png, id=132, 495.8525pt x 488.82625pt>
 File: bs2a.png Graphic file (type png)
  <use bs2a.png>
-Package pdftex.def Info: bs2a.png used on input line 944.
+Package pdftex.def Info: bs2a.png used on input line 947.
 (pdftex.def)             Requested size: 243.27419pt x 239.8253pt.
 
 <bs2b.png, id=133, 490.83376pt x 488.82625pt>
 File: bs2b.png Graphic file (type png)
  <use bs2b.png>
-Package pdftex.def Info: bs2b.png used on input line 946.
+Package pdftex.def Info: bs2b.png used on input line 949.
 (pdftex.def)             Requested size: 243.27419pt x 242.27928pt.
 
 <bs3a.png, id=134, 491.8375pt x 488.82625pt>
 File: bs3a.png Graphic file (type png)
  <use bs3a.png>
-Package pdftex.def Info: bs3a.png used on input line 955.
+Package pdftex.def Info: bs3a.png used on input line 958.
 (pdftex.def)             Requested size: 243.27419pt x 241.78699pt.
 
 <bs3b.png, id=135, 493.845pt x 489.83pt>
 File: bs3b.png Graphic file (type png)
  <use bs3b.png>
-Package pdftex.def Info: bs3b.png used on input line 957.
+Package pdftex.def Info: bs3b.png used on input line 960.
 (pdftex.def)             Requested size: 243.27419pt x 241.28941pt.
  [25 <./bs1a.png> <./bs1b.png> <./bs2a.png> <./bs2b.png>] <bs4a.png, id=139, 49
 3.845pt x 486.81876pt>
 File: bs4a.png Graphic file (type png)
 
 <use bs4a.png>
-Package pdftex.def Info: bs4a.png used on input line 967.
+Package pdftex.def Info: bs4a.png used on input line 970.
 (pdftex.def)             Requested size: 243.27419pt x 239.80608pt.
  <bs4b.png, id=140, 500.87125pt x 493.845pt>
 File: bs4b.png Graphic file (type png)
  <use bs4b.png>
-Package pdftex.def Info: bs4b.png used on input line 969.
+Package pdftex.def Info: bs4b.png used on input line 972.
 (pdftex.def)             Requested size: 243.27419pt x 239.86116pt.
 
 [26 <./bs3a.png> <./bs3b.png> <./bs4a.png> <./bs4b.png>] [27] [28]
@@ -1455,7 +1460,7 @@ Chapter 5.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1097 \end{alignat*}
+l.1100 \end{alignat*}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1466,7 +1471,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.1097 \end{alignat*}
+l.1100 \end{alignat*}
                      
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1475,7 +1480,7 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1097 \end{alignat*}
+l.1100 \end{alignat*}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1486,7 +1491,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.1097 \end{alignat*}
+l.1100 \end{alignat*}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1497,7 +1502,7 @@ my insertion and my current dilemma will both disappear.
 ! Misplaced \omit.
 \math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
                                                   \kern -\alignsep@ \iftag@ ...
-l.1097 \end{alignat*}
+l.1100 \end{alignat*}
                      
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1505,7 +1510,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.1097 \end{alignat*}
+l.1100 \end{alignat*}
                      
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1514,7 +1519,7 @@ Try to go on, since this might almost work.
 <grid0.png, id=150, 650.43pt x 528.97626pt>
 File: grid0.png Graphic file (type png)
  <use grid0.png>
-Package pdftex.def Info: grid0.png used on input line 1101.
+Package pdftex.def Info: grid0.png used on input line 1104.
 (pdftex.def)             Requested size: 256.07481pt x 208.26128pt.
  [29
 
@@ -1522,25 +1527,25 @@ Package pdftex.def Info: grid0.png used on input line 1101.
 <grid1.png, id=154, 525.965pt x 463.7325pt>
 File: grid1.png Graphic file (type png)
  <use grid1.png>
-Package pdftex.def Info: grid1.png used on input line 1108.
+Package pdftex.def Info: grid1.png used on input line 1111.
 (pdftex.def)             Requested size: 256.07481pt x 225.78033pt.
  [30 <./grid0.png> <./grid1.png>] <fdm.png, id=159, 749.80125pt x 564.1075pt>
 File: fdm.png Graphic file (type png)
  <use fdm.png>
-Package pdftex.def Info: fdm.png used on input line 1140.
+Package pdftex.def Info: fdm.png used on input line 1143.
 (pdftex.def)             Requested size: 358.50317pt x 269.71838pt.
 
 [31 <./fdm.png>] [32
 
 ]
 
-! LaTeX Error: \begin{itemize} on input line 929 ended by \end{document}.
+! LaTeX Error: \begin{itemize} on input line 932 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1174 \end{document}
+l.1177 \end{document}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1551,8 +1556,8 @@ or  <return>  to continue without it.
 ] (./Project.aux) )
 (\end occurred inside a group at level 2)
 
-### semi simple group (level 2) entered at line 929 (\begingroup)
-### semi simple group (level 1) entered at line 82 (\begingroup)
+### semi simple group (level 2) entered at line 932 (\begingroup)
+### semi simple group (level 1) entered at line 85 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
  8572 strings out of 494985
@@ -1583,7 +1588,7 @@ pe1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/symbols/msbm7.pfb>
-Output written on Project.pdf (34 pages, 1543798 bytes).
+Output written on Project.pdf (34 pages, 1543880 bytes).
 PDF statistics:
  592 PDF objects out of 1000 (max. 8388607)
  152 compressed objects within 2 object streams
