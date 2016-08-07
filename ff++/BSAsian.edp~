@@ -1,13 +1,13 @@
 //BlackSholesAsian.edp
 int N = 25, L=250,Nmax = 30,n=0;
-real verbo = 0, T=4, mu = 0.1, r=0.03, K =100, t, dt = T/Nmax;
+real  T=4, sigma = 0.3, r=0.03, K =100, t, dt = T/Nmax;
 
 mesh th = square (N, N, [ L*x, L*y]);
 fespace  Vh(th, P2);
 
 
 
-func u1= (mu^2-r)*x;
+func u1= (sigma^2-r)*x;
 func u2 = (y-x)/(T-t); 
 
 real g1,g2,g3;
@@ -15,19 +15,17 @@ real g1,g2,g3;
 Vh u = max(y-K, 0.), v, uold;
 
 
-
-//explain <,>
 problem BS(u, v, init=n)=
 	int2d(th) (u*v*(r+1/dt)
-	+dx(u)*dx(v)*x^2*mu^2/2)
+	+dx(u)*dx(v)*x^2*sigma^2/2)
 	-int2d(th) (convect ([u1,u2], -dt,uold)*v/dt)
 	-int1d(th,2)((g1*(y<g3) + g2*(y>=g3))*v);
 
 for (t=0; t<T-2; t+=dt)
 {
 //artificial boundaties 
-g1 = 2*t*exp(-t*r)/T/(mu*L)^2;
-g2 = 2*(1-exp(-t*r))/T/r/(mu*L)^2;
+g1 = 2*t*exp(-t*r)/T/(sigma*L)^2;
+g2 = 2*(1-exp(-t*r))/T/r/(sigma*L)^2;
 g3 = K*T/(T-t+0.001);
 BS; n=1;
 uold = u;

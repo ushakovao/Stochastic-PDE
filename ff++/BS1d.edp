@@ -1,6 +1,7 @@
 //BlackSholes1D.edp
 int Nx = 50, L=200, LL = 10,n;
-real T=1, sigma = 0.1, r=0.05, K =100, dt = 0.01;
+real T=1, sigma = 0.3, r=0.05, K =100, dt = 0.1, exact = 3.28063 ;
+
 mesh th = square (Nx, 1, [L*x, LL*y]);
 fespace  Vh(th, P1, periodic = [[1,x],[3,x]]);
 fespace Vhdc(th,P1dc);
@@ -16,10 +17,10 @@ problem BS(u, v, init=n)=
 for (n=0; n*dt <=T; n++)
 {
 uold=u;
-BS;
-cout<<"Peclet = "<< (2*r)/(sigma*x) <<endl ;
-cout<<"max = "<< r/(sigma^2) <<endl ;	
+BS;	
+cout<<"Peclet = "<< (2*r)/(sigma*x) << " Check if <max = "<<r/(sigma^2) << endl ;	
 }
+		
 Vhdc dxu=dx(u);
 plot(u, th , value=1);
 

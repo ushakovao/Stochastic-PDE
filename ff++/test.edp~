@@ -1,0 +1,36 @@
+//BlackSholesAsian.edp
+int N = 25, L=200,Nmax = 30,n=0;
+real T=1, sigma = 0.3, r=0.05, K =150, dt = 0.1, exact = 3.28063 ;
+
+mesh th = square (N, N, [ L*x, L*y]);
+fespace  Vh(th, P2);
+
+
+Vh u = max(K-x, 0.), v, uold;
+
+
+
+//explain <,>
+problem BS(u, v, init=n)=
+	int2d(th) (u*v*(r+1/dt)
+	-x*(r-sigma^2/2)*dx(u)*v
+	+dx(u)*dx(v)*(x*sigma)^2/2)
+	-int2d(th)(uold*v/dt) + on (2, u=0);
+
+for (n=0; n*dt <=T; n++)
+{
+uold=u;
+BS;
+cout<<"x = "<< x <<endl ;
+cout<<"Analytical Solution = "<< exact <<endl ;
+cout<<"PDE Solution= "<< u<<endl ;	
+cout<<"PDE Solution= "<< (u)*exp(-r*T)<<endl ;
+cout<<"PDE Solution= "<< exact*exp(-r*T) <<endl ;	
+//real L2 = sqrt(int2d(th) ((115-u)^2));
+//L2err[n] = sqrt(int2d(th) ((115-u-exact)^2))/L2;
+//cout<<  "L2 err= "<< L2err[n] << endl ;	
+cout<<"Peclet = "<< (2*r)/(sigma*x) << " Check if <max = "<<r/(sigma^2) <<endl ;	
+}
+//cout<< "Convergence rate= "<< log(L2err[0]/L2err[1])/log(2.) <<endl ;
+
+plot(u, th , value=1);

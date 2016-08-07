@@ -4,6 +4,7 @@ real T=1, sigma = 0.3, r=0.05, K =100, dt = 0.01, b=30;
 //mesh rules the payoff
 mesh th = square (Nx, 1, [b + L*x, LL*y]);
 fespace  Vh(th, P1, periodic = [[1,x],[3,x]]);
+fespace Vhdc(th,P1dc);
 
 Vh u = max(K-x, 0.), v, uold;
 
@@ -18,5 +19,7 @@ for (n=0; n*dt <=T; n++)
 uold=u;
 BS;
 }
-
-plot(u, th , value=1);
+;
+//plot(u, th , value=1);
+Vhdc dxu=dx(u);
+plot(dxu,th,value=1); //delta

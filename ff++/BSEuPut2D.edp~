@@ -1,6 +1,6 @@
 // file BlackScholes2D.edp
 int m=30,L=80,LL=80, j=100;
-real sigx=0.6, sigy=0.6, rho=0.6, r=0.05, K=40, dt=0.01;
+real sigx=1., sigy=1., rho=0., r=0.05, K=40, dt=0.01;
 mesh th=square(m,m,[L*x,LL*y]);
 fespace Vh(th,P1);
 
@@ -27,5 +27,5 @@ solve eq1(u,v,init=j,solver=LU) = int2d(th)( u*v*(r+1/dt)
 j=j+1;
 };
 plot(u, fill=1,wait=1,value=1);
-//cout<< "Peclet1 for sigma= "<<sigx<<" is "<< (2*r*L)/(u*sigx^2)<<endl;
-//cout<< "Peclet2 for sigma= "<<sigy<<" is "<< (2*r*L)/(u*sigy^2)<<endl;
+
+

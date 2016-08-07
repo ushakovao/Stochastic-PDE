@@ -95,7 +95,7 @@ double BSPrice(double S0, double K, double T, double r, double sigma, char OpTyp
 int main()
 {
  
-  double S0=100.,K=115.,T=1.,r=0.05,sigma=0.3;
+  double S0=200.,K=150.,T=1.,r=0.05,sigma=0.3;
 
   int iMax=1000,jMax=100;
   cout<<"*******************"<<endl;

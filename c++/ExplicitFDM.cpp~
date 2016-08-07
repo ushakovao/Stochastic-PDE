@@ -4,28 +4,27 @@
 #include <vector>
 using namespace std;
 
-/* Template code for the Explicit Finite Difference
- */
+
 double explicitCallOption(double S0,double X,double T,double r,double sigma,int iMax,int jMax)
 {
-  // declare and initialise local variables (ds,dt)
+ 
   double S_max=2*X;
   double dS=S_max/jMax;
   double dt=T/iMax;
-  // create storage for the stock price and option price (old and new)
+  // storage for the stock price and option price (old and new)
   vector<double> S(jMax+1),vOld(jMax+1),vNew(jMax+1);
-  // setup and initialise the stock price
+ 
   for(int j=0;j<=jMax;j++)
   {
     S[j] = j*dS;
   }
-  // setup and initialise the final conditions on the option price
+  //final conditions 
   for(int j=0;j<=jMax;j++)
   {
     vOld[j] = max(S[j]-X,0.);
     vNew[j] = max(S[j]-X,0.);
   }
-  // loop through time levels, setting the option price at each grid point, and also on the boundaries
+  // loop through time 
   for(int i=iMax-1;i>=0;i--)
   {
     // apply boundary condition at S=0
@@ -59,7 +58,7 @@ double f(double x) {
 }
 
 
-// Boole's Rule (to generate normal dist
+// Boole's Rule (to generate normal dist)
 double Boole(double StartPoint, double EndPoint, int n) {
 	vector<double> X(n+1, 0.0);
 	vector<double> Y(n+1, 0.0);
@@ -95,16 +94,16 @@ double BSPrice(double S0, double K, double T, double r, double sigma, char OpTyp
 
 int main()
 {
-  // declare and initialise Black Scholes parameters
-  double S0=100.,K=115.,T=1.,r=0.05,sigma=0.3;
-  // declare and initialise grid paramaters
+ 
+  double S0=200.,K=150.,T=1.,r=0.05,sigma=0.3;
+
   int iMax=1000,jMax=100;
   cout<<"*******************"<<endl;
   cout<<"S0="<< S0<< "  K="<< K<<" Imax="<< iMax<<"  Jmax="<< jMax<< endl;
   cout<<"*******************"<<endl;
   cout <<"PDE solution = " <<explicitCallOption(S0,K,T,r,sigma,iMax,jMax) << endl;
   cout<<"*******************"<<endl;
-  cout <<"Analytical solution = " << BSPrice(S0,K,T,r,sigma,'C') <<endl;
+  cout <<"Analytical solution = " << BSPrice(S0,K,T,r,sigma,'P') <<endl;
   cout<<"*******************"<<endl;
 
 }

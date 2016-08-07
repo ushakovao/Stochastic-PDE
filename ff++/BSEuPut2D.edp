@@ -27,5 +27,6 @@ solve eq1(u,v,init=j,solver=LU) = int2d(th)( u*v*(r+1/dt)
 j=j+1;
 };
 plot(u, fill=1,wait=1,value=1);
-//cout<< "Peclet1 for sigma= "<<sigx<<" is "<< (2*r*L)/(u*sigx^2)<<endl;
-//cout<< "Peclet2 for sigma= "<<sigy<<" is "<< (2*r*L)/(u*sigy^2)<<endl;
+
+
+
