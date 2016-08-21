@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.12)  7 AUG 2016 16:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.12)  21 AUG 2016 14:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1171,7 +1171,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2
 
 ] [3]
-<dia.png, id=199, 772.8875pt x 707.64375pt>
+<dia.png, id=205, 772.8875pt x 707.64375pt>
 File: dia.png Graphic file (type png)
  <use dia.png>
 Package pdftex.def Info: dia.png used on input line 45.
@@ -1196,7 +1196,7 @@ or  <return>  to continue without it.
 
 ] [6
 
-] <payoff.png, id=284, 752.8125pt x 375.4025pt>
+] <payoff.png, id=290, 752.8125pt x 375.4025pt>
 File: payoff.png Graphic file (type png)
  <use payoff.png>
 Package pdftex.def Info: payoff.png used on input line 101.
@@ -1217,7 +1217,7 @@ or  <return>  to continue without it.
 
 [7
 
- <./payoff.png>] <OptionsProfit.png, id=318, 681.54625pt x 714.67pt>
+ <./payoff.png>] <OptionsProfit.png, id=324, 681.54625pt x 714.67pt>
 File: OptionsProfit.png Graphic file (type png)
 
 <use OptionsProfit.png>
@@ -1319,20 +1319,20 @@ Underfull \hbox (badness 10000) detected at line 143
 
 [10
 
-] <models.png, id=404, 1199.48125pt x 332.24126pt>
+] <models.png, id=410, 1199.48125pt x 332.24126pt>
 File: models.png Graphic file (type png)
  <use models.png>
 Package pdftex.def Info: models.png used on input line 164.
 (pdftex.def)             Requested size: 342.2953pt x 94.8114pt.
 
-<sp500.png, id=405, 818.05624pt x 576.1525pt>
+<sp500.png, id=411, 818.05624pt x 576.1525pt>
 File: sp500.png Graphic file (type png)
  <use sp500.png>
 Package pdftex.def Info: sp500.png used on input line 164.
 (pdftex.def)             Requested size: 136.91603pt x 96.42372pt.
  [11
 
- <./models.png> <./sp500.png>] <gbm.png, id=433, 465.74pt x 427.5975pt>
+ <./models.png> <./sp500.png>] <gbm.png, id=439, 465.74pt x 427.5975pt>
 File: gbm.png Graphic file (type png)
  <use gbm.png>
 Package pdftex.def Info: gbm.png used on input line 189.
@@ -1340,13 +1340,13 @@ Package pdftex.def Info: gbm.png used on input line 189.
 
 [12
 
- <./gbm.png>] <brown.png, id=463, 1002.74625pt x 496.85625pt>
+ <./gbm.png>] <brown.png, id=469, 1002.74625pt x 496.85625pt>
 File: brown.png Graphic file (type png)
 
 <use brown.png>
 Package pdftex.def Info: brown.png used on input line 205.
 (pdftex.def)             Requested size: 188.26346pt x 93.28162pt.
- <poisson.png, id=464, 999.735pt x 501.875pt>
+ <poisson.png, id=470, 999.735pt x 501.875pt>
 File: poisson.png Graphic file (type png)
  <use poisson.png>
 Package pdftex.def Info: poisson.png used on input line 205.
@@ -1354,13 +1354,13 @@ Package pdftex.def Info: poisson.png used on input line 205.
 
 [13
 
- <./brown.png> <./poisson.png>] <wiener.png, id=494, 999.735pt x 497.86pt>
+ <./brown.png> <./poisson.png>] <wiener.png, id=500, 999.735pt x 497.86pt>
 File: wiener.png Graphic file (type png)
 
 <use wiener.png>
 Package pdftex.def Info: wiener.png used on input line 220.
 (pdftex.def)             Requested size: 188.26346pt x 93.75114pt.
- <merton.png, id=495, 1000.73875pt x 502.87875pt>
+ <merton.png, id=501, 1000.73875pt x 502.87875pt>
 File: merton.png Graphic file (type png)
 
 <use merton.png>
@@ -1375,7 +1375,7 @@ Package pdftex.def Info: merton.png used on input line 220.
 ] [17
 
 ]
-<gbmgnu.png, id=611, 622.325pt x 380.42125pt>
+<gbmgnu.png, id=617, 622.325pt x 380.42125pt>
 File: gbmgnu.png Graphic file (type png)
  <use gbmgnu.png>
 Package pdftex.def Info: gbmgnu.png used on input line 303.
@@ -1436,14 +1436,14 @@ you left one out. Proceed, with fingers crossed.
 
 ] [22
 
-] <Oks.jpg, id=756, 331.2375pt x 500.87125pt>
+] <Oks.jpg, id=762, 331.2375pt x 500.87125pt>
 File: Oks.jpg Graphic file (type jpg)
  <use Oks.jpg>
 Package pdftex.def Info: Oks.jpg used on input line 382.
 (pdftex.def)             Requested size: 102.68962pt x 155.27612pt.
  [23
 
- <./Oks.jpg>] <Delaunay.png, id=784, 501.875pt x 501.875pt>
+ <./Oks.jpg>] <Delaunay.png, id=790, 501.875pt x 501.875pt>
 File: Delaunay.png Graphic file (type png)
  <use Delaunay.png>
 Package pdftex.def Info: Delaunay.png used on input line 400.
@@ -1454,13 +1454,13 @@ Overfull \vbox (33.04305pt too high) detected at line 400
 
 [24
 
- <./Delaunay.png>] <s01.png, id=814, 673.51625pt x 427.5975pt>
+ <./Delaunay.png>] <s01.png, id=820, 673.51625pt x 427.5975pt>
 File: s01.png Graphic file (type png)
 
 <use s01.png>
 Package pdftex.def Info: s01.png used on input line 414.
 (pdftex.def)             Requested size: 162.59235pt x 103.22575pt.
- <s03.png, id=815, 651.43375pt x 423.5825pt>
+ <s03.png, id=821, 651.43375pt x 423.5825pt>
 File: s03.png Graphic file (type png)
  <use s03.png>
 Package pdftex.def Info: s03.png used on input line 414.
@@ -1468,33 +1468,33 @@ Package pdftex.def Info: s03.png used on input line 414.
 
 [25
 
- <./s01.png> <./s03.png>] <b30.png, id=845, 630.355pt x 420.57124pt>
+ <./s01.png> <./s03.png>] <b30.png, id=851, 630.355pt x 420.57124pt>
 File: b30.png Graphic file (type png)
 
 <use b30.png>
 Package pdftex.def Info: b30.png used on input line 427.
 (pdftex.def)             Requested size: 102.68962pt x 68.51207pt.
- <b90.png, id=846, 610.28pt x 425.59pt>
+ <b90.png, id=852, 610.28pt x 425.59pt>
 File: b90.png Graphic file (type png)
  <use b90.png>
 Package pdftex.def Info: b90.png used on input line 427.
 (pdftex.def)             Requested size: 102.68962pt x 71.60902pt.
 
-<b100.png, id=847, 617.30624pt x 413.545pt>
+<b100.png, id=853, 617.30624pt x 413.545pt>
 File: b100.png Graphic file (type png)
  <use b100.png>
 Package pdftex.def Info: b100.png used on input line 427.
 (pdftex.def)             Requested size: 102.68962pt x 68.79358pt.
  [26
 
- <./b30.png> <./b90.png> <./b100.png>] <octave1.png, id=876, 871.255pt x 298.11
+ <./b30.png> <./b90.png> <./b100.png>] <octave1.png, id=882, 871.255pt x 298.11
 375pt>
 File: octave1.png Graphic file (type png)
 
 <use octave1.png>
 Package pdftex.def Info: octave1.png used on input line 440.
 (pdftex.def)             Requested size: 284.10573pt x 97.20879pt.
- <octave2.png, id=877, 819.06pt x 300.12125pt>
+ <octave2.png, id=883, 819.06pt x 300.12125pt>
 File: octave2.png Graphic file (type png)
 
 <use octave2.png>
@@ -1512,7 +1512,7 @@ File: s01.png Graphic file (type png)
 Package pdftex.def Info: s01.png used on input line 456.
 (pdftex.def)             Requested size: 162.59235pt x 103.22575pt.
 
-<d01.png, id=907, 643.40375pt x 430.60875pt>
+<d01.png, id=913, 643.40375pt x 430.60875pt>
 File: d01.png Graphic file (type png)
  <use d01.png>
 Package pdftex.def Info: d01.png used on input line 456.
@@ -1525,7 +1525,7 @@ File: s03.png Graphic file (type png)
 <use s03.png>
 Package pdftex.def Info: s03.png used on input line 466.
 (pdftex.def)             Requested size: 162.59235pt x 105.72086pt.
- <d03.png, id=937, 640.3925pt x 432.61626pt>
+ <d03.png, id=943, 640.3925pt x 432.61626pt>
 File: d03.png Graphic file (type png)
  <use d03.png>
 Package pdftex.def Info: d03.png used on input line 466.
@@ -1533,52 +1533,52 @@ Package pdftex.def Info: d03.png used on input line 466.
 
 [29
 
- <./d03.png>] <bs1a.png, id=966, 491.8375pt x 489.83pt>
+ <./d03.png>] <bs1a.png, id=972, 491.8375pt x 489.83pt>
 File: bs1a.png Graphic file (type png)
  <use bs1a.png>
 Package pdftex.def Info: bs1a.png used on input line 481.
 (pdftex.def)             Requested size: 162.59235pt x 161.9284pt.
 
-<bs1b.png, id=967, 492.84125pt x 488.82625pt>
+<bs1b.png, id=973, 492.84125pt x 488.82625pt>
 File: bs1b.png Graphic file (type png)
  <use bs1b.png>
 Package pdftex.def Info: bs1b.png used on input line 481.
 (pdftex.def)             Requested size: 162.59235pt x 161.2684pt.
  [30
 
- <./bs1a.png> <./bs1b.png>] <bs2a.png, id=996, 495.8525pt x 488.82625pt>
+ <./bs1a.png> <./bs1b.png>] <bs2a.png, id=1002, 495.8525pt x 488.82625pt>
 File: bs2a.png Graphic file (type png)
  <use bs2a.png>
 Package pdftex.def Info: bs2a.png used on input line 491.
 (pdftex.def)             Requested size: 162.59235pt x 160.28383pt.
 
-<bs2b.png, id=997, 490.83376pt x 488.82625pt>
+<bs2b.png, id=1003, 490.83376pt x 488.82625pt>
 File: bs2b.png Graphic file (type png)
  <use bs2b.png>
 Package pdftex.def Info: bs2b.png used on input line 491.
 (pdftex.def)             Requested size: 162.59235pt x 161.92477pt.
  [31
 
- <./bs2a.png> <./bs2b.png>] <bs3a.png, id=1027, 491.8375pt x 488.82625pt>
+ <./bs2a.png> <./bs2b.png>] <bs3a.png, id=1034, 491.8375pt x 488.82625pt>
 File: bs3a.png Graphic file (type png)
  <use bs3a.png>
 Package pdftex.def Info: bs3a.png used on input line 501.
 (pdftex.def)             Requested size: 162.59235pt x 161.59659pt.
 
-<bs3b.png, id=1028, 493.845pt x 489.83pt>
+<bs3b.png, id=1035, 493.845pt x 489.83pt>
 File: bs3b.png Graphic file (type png)
  <use bs3b.png>
 Package pdftex.def Info: bs3b.png used on input line 501.
 (pdftex.def)             Requested size: 162.59235pt x 161.26321pt.
  [32
 
- <./bs3a.png> <./bs3b.png>] <bs4a.png, id=1057, 493.845pt x 486.81876pt>
+ <./bs3a.png> <./bs3b.png>] <bs4a.png, id=1063, 493.845pt x 486.81876pt>
 File: bs4a.png Graphic file (type png)
  <use bs4a.png>
 Package pdftex.def Info: bs4a.png used on input line 511.
 (pdftex.def)             Requested size: 162.59235pt x 160.27184pt.
 
-<bs4b.png, id=1058, 500.87125pt x 493.845pt>
+<bs4b.png, id=1064, 500.87125pt x 493.845pt>
 File: bs4b.png Graphic file (type png)
  <use bs4b.png>
 Package pdftex.def Info: bs4b.png used on input line 511.
@@ -1587,7 +1587,7 @@ Package pdftex.def Info: bs4b.png used on input line 511.
 
  <./bs4a.png> <./bs4b.png>] [34
 
-] <grid1.png, id=1115, 525.965pt x 463.7325pt>
+] <grid1.png, id=1121, 525.965pt x 463.7325pt>
 File: grid1.png Graphic file (type png)
  <use grid1.png>
 Package pdftex.def Info: grid1.png used on input line 547.
@@ -1597,7 +1597,7 @@ Package pdftex.def Info: grid1.png used on input line 547.
 
  <./grid1.png>] [36
 
-] <fdm.png, id=1171, 749.80125pt x 564.1075pt>
+] <fdm.png, id=1177, 749.80125pt x 564.1075pt>
 File: fdm.png Graphic file (type png)
 
 <use fdm.png>
@@ -1611,13 +1611,15 @@ Overfull \vbox (4.41693pt too high) detected at line 566
 
  <./fdm.png>] [38
 
-] <1.png, id=1226, 1252.68pt x 705.63625pt>
-File: 1.png Graphic file (type png)
- <use 1.png>
-Package pdftex.def Info: 1.png used on input line 590.
-(pdftex.def)             Requested size: 342.2953pt x 192.81773pt.
+] [39
 
-[39
+] <1.png, id=1259, 1252.68pt x 705.63625pt>
+File: 1.png Graphic file (type png)
+
+<use 1.png>
+Package pdftex.def Info: 1.png used on input line 600.
+(pdftex.def)             Requested size: 342.2953pt x 192.81773pt.
+ [40
 
  <./1.png>]
 \tf@nav=\write6
@@ -1629,25 +1631,25 @@ Package pdftex.def Info: 1.png used on input line 590.
 \tf@snm=\write8
 \openout8 = `beamer.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 594.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 594.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 602.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 602.
  (./beamer.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 594.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 594.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 602.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 602.
 Package rerunfilecheck Info: File `beamer.out' has not changed.
-(rerunfilecheck)             Checksum: 68AC026D0BBCFAA16FF2F38C94DAE379;922.
+(rerunfilecheck)             Checksum: DE86A6D5070F3611A842F5288BEF63B4;969.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 594.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 602.
  ) 
 Here is how much of TeX's memory you used:
- 16633 strings out of 494985
- 305758 string characters out of 6180356
- 380133 words of memory out of 5000000
- 19292 multiletter control sequences out of 15000+600000
+ 16642 strings out of 494985
+ 305844 string characters out of 6180356
+ 381133 words of memory out of 5000000
+ 19298 multiletter control sequences out of 15000+600000
  16696 words of font info for 62 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  49i,17n,60p,424b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1665,10 +1667,10 @@ fonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 >
-Output written on beamer.pdf (39 pages, 2762753 bytes).
+Output written on beamer.pdf (40 pages, 2765255 bytes).
 PDF statistics:
- 1325 PDF objects out of 1440 (max. 8388607)
- 1211 compressed objects within 13 object streams
- 96 named destinations out of 1000 (max. 500000)
- 354 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1358 PDF objects out of 1440 (max. 8388607)
+ 1243 compressed objects within 13 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 362 words of extra memory for PDF output out of 10000 (max. 10000000)
 

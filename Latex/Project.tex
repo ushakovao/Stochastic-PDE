@@ -739,8 +739,8 @@ Now lets multiply it by a test function, that lives in Weighted Sobolev space : 
 \end{equation}
 where $a_t$ is a bilinear form defined as:
 \begin{equation}
-a_t(v,w) = \int_{\mathbb{R}^+} (\frac{1}{2} S^2\sigma^2(S,t)\frac{\partial v}{\partial S}\frac{\partial w}{\partial S} + r(t)vw)ds + 
-\int_{\mathbb{R}^+} (-r(t)+\sigma^2(S,t) + S\sigma(S,t)\frac{\partial \sigma}{\partial S}(S,t))S\frac{\partial v}{\partial S}wdS.
+
+a(u,w)=\int_0^\infty \frac{\partial u}{\partial S} \frac{\sigma^2}{2} \frac{S^2w}{\partial S} - rSw\frac{\partial u}{\partial S} + ruw
 \end{equation}
 
 
@@ -1161,7 +1161,6 @@ As our main goal was implementing FEM and FDM, we can conclude that each of them
 \end{itemize}
 \end{itemize}
 For further studying, we consider look deeply in models, based on other processes, like Heston or Bates model. We also look forward to master Feel++.   
-
 
 
 
