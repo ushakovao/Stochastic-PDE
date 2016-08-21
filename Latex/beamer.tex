@@ -327,20 +327,7 @@ $ d_2 = \frac{\ln (\frac{S_0}{K}) + (r-d - \frac{\sigma^2}{2} )T}{\sigma \sqrt{T
 
 \section{Finite Element Method} 
 \subsection{Overview}
-\frame {\frametitle{Weak Formulation}
-Linear parabolic PDE with non-constant coefficients and non-homogenous boundary conditions and, possibly, non-differentiable or discontinuous final conditions:
-\begin{itemize}
-\item Choosing space : Weighted Sobolev $ \forall u \in V,  V=\{ v \in L^2(\mathbb{R}_+) : S\frac{\partial v}{\partial S} \in L^2(\mathbb{R}_+) \}$
-\item Bilinear form $a$:
-\begin{equation}
-a(u,w)=\int_0^\infty \frac{\partial u}{\partial S} \frac{\sigma^2}{2} \frac{S^2w}{\partial S} - rSw\frac{\partial u}{\partial S} + ruw
-\end{equation}
-\item Weak formulation (for put):
-\begin{equation}
-(\frac{\partial u}{\partial t}, w) + a(u,w) = 0, \forall w \in V
-\end{equation}
-\end{itemize}
-}
+
 
 \frame{\frametitle{Black-Scholes PDE - Call and Put }
 \begin{equation}
@@ -370,7 +357,20 @@ $P(S,T) = max(K-S,0)$
 Peclet number : $\frac{diff}{conv}=\frac{rS}{\frac{1}{2} \sigma^2 S^2}=\frac{2rS}{\sigma^2 S^2}=\frac{2r}{\sigma^2 S}$\\
 \textbf{Remarque} :  $Pe<\frac{r}{\sigma^2}$, if not, then small $\sigma$ is not compensated by a small $r$.
 }
-
+\frame {\frametitle{Weak Formulation}
+Linear parabolic PDE with non-constant coefficients and non-homogenous boundary conditions and, possibly, non-differentiable or discontinuous final conditions:
+\begin{itemize}
+\item Choosing space : Weighted Sobolev $ \forall u \in V,  V=\{ v \in L^2(\mathbb{R}_+) : S\frac{\partial v}{\partial S} \in L^2(\mathbb{R}_+) \}$
+\item Bilinear form $a$:
+\begin{equation}
+a(u,w)=\int_0^\infty \frac{\partial u}{\partial S} \frac{\sigma^2}{2} \frac{S^2w}{\partial S} - rSw\frac{\partial u}{\partial S} + ruw
+\end{equation}
+\item Weak formulation (for put):
+\begin{equation}
+(\frac{\partial u}{\partial t}, w) + a(u,w) = 0, \forall w \in V
+\end{equation}
+\end{itemize}
+}
 \frame {\frametitle{Existence and Uniqueness}
 Martingales + Filtration + Ito Calculus
  
